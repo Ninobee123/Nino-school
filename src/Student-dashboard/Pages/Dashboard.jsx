@@ -11,7 +11,7 @@ let Dashboard = ({isDarkMode,toggleTheme})=>{
   const userData = location.state;
 
   console.log(userData); // { name: 'John Doe', email: 'johndoe@example.com', password: '234567' }
-const [showSideBar,setShowSideBar] = useState(true)
+const [showSideBar,setShowSideBar] = useState(false)
 function showHideSideBar(e) {
   e.preventDefault()
   showSideBar===false?setShowSideBar(true):setShowSideBar(false)
